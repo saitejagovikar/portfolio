@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Sai Teja Govikar — Java Full Stack Developer & Freelancer with 2 years of experience. Building scalable web apps with Java, Spring Boot, JavaScript and more." />
+  <meta name="keywords"
+    content="Java Developer, Full Stack Developer, Freelancer, Spring Boot, Portfolio, Sai Teja Govikar" />
+  <meta name="author" content="Sai Teja Govikar" />
+  <title>Sai Teja Govikar | Java Full Stack Developer & Freelancer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <div class="bg-shapes">
+    <div class="shape shape-circle"></div>
+    <div class="shape shape-square"></div>
+  </div>
+
+  <!-- Animated Background Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- ===== DESKTOP NAV ===== -->
+  <nav id="desktop-nav">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>SaiTeja<span class="logo-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn btn-outline" id="nav-hire-btn">
+      Let's Talk
+    </a>
+  </nav>
+
+  <!-- ===== HAMBURGER NAV ===== -->
+  <nav id="hamburger-nav">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>SaiTeja<span class="logo-bracket">/&gt;</span>
+    </div>
+    <div class="hamburger-menu">
+      <button class="hamburger-icon" id="hamburger-btn" onclick="toggleMenu()" aria-label="Toggle navigation menu"
+        aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="menu-links" id="mobile-menu">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        <li>
+          <a href="#contact" onclick="toggleMenu()" class="btn btn-outline">Let's Talk</a>
+        </li>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="profile">
+    <!-- Text LEFT -->
+    <div class="hero-right reveal">
+      <p class="hero-greeting">👋 Hi, I'm</p>
+      <h1 class="hero-name">Sai Teja <span class="name-accent">Govikar</span></h1>
+      <p class="hero-role-label">Full-Stack Developer</p>
+      <p class="hero-bio">
+        I turn ideas into production-ready web applications — from intuitive frontends to scalable backends and
+        real-world deployments.</p>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn btn-outline" id="view-projects-btn">
+          View My Work
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12,5 19,12 12,19" />
+          </svg>
+        </a>
+        <a href="./assests/Saiteja_Govikar_Resume_.pdf" download="Sai_Teja_Resume.pdf" target="_blank"
+          class="btn btn-outline" id="download-resume-btn">
+          Download Resume
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+          </svg>
+        </a>
+      </div>
+      <div class="social-connect-row">
+        <span class="social-connect-label">Let's connect</span>
+        <div class="social-links">
+          <a href="https://github.com/saitejagovikar" target="_blank" class="social-icon" id="github-link"
+            aria-label="GitHub">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/sai-teja-govikar-bb1032256/" target="_blank" class="social-icon"
+            id="linkedin-link" aria-label="LinkedIn">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+              <rect x="2" y="9" width="4" height="12" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </a>
+          <a href="mailto:saiteja51743@gmail.com" class="social-icon" id="email-social-link" aria-label="Email">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Photo RIGHT -->
+    <div class="hero-left reveal">
+      <div class="profile-img-wrapper">
+        <div class="profile-ring"></div>
+        <img src="./assests/20-4a2.png" alt="Sai Teja Govikar profile picture" class="profile-img" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about">
+    <div class="section-header reveal">
+      <p class="section-tag">A bit about who I am</p>
+      <h2 class="section-title">About Me</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-cards reveal">
+        <div class="about-card" id="about-exp-card">
+          <div class="about-card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="7" width="20" height="14" rx="2" />
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+            </svg>
+          </div>
+          <h3>Experience</h3>
+          <p>2+ Years<br /><span>Building Software</span></p>
+        </div>
+        <div class="about-card" id="about-edu-card">
+          <div class="about-card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+              <path d="M6 12v5c3 3 9 3 12 0v-5" />
+            </svg>
+          </div>
+          <h3>Education</h3>
+          <p>B.Tech — ECE<br /><span>2020 – 2024</span></p>
+        </div>
+        <div class="about-card" id="about-freelance-card">
+          <div class="about-card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+          </div>
+          <h3>Freelancer</h3>
+          <p>Available<br /><span>For New Projects</span></p>
+        </div>
+      </div>
+      <div class="about-bio reveal">
+        <p>
+          I'm a <strong>Full-Stack Developer</strong> specializing in building complete, production-ready web solutions.
+          I handle everything from designing responsive user interfaces to architecting robust backend APIs and
+          databases.
+        </p>
+        <div class="about-meta-grid">
+          <div class="about-meta-item">
+            <span class="meta-label">Experience</span>
+            <span class="meta-value">2+ Years</span>
+          </div>
+          <div class="about-meta-item">
+            <span class="meta-label">Location</span>
+            <span class="meta-value">India</span>
+          </div>
+          <div class="about-meta-item">
+            <span class="meta-label">Availability</span>
+            <span class="meta-value">Open to Work</span>
+          </div>
+          <div class="about-meta-item">
+            <span class="meta-label">Education</span>
+            <span class="meta-value">B.Tech ECE</span>
+          </div>
+        </div>
+      </div>
+      <!-- Stats panel -->
+      <div class="about-stats-panel reveal">
+        <div class="about-stat-card">
+          <span class="asc-num">5+</span>
+          <span class="asc-label">Projects Built</span>
+        </div>
+        <div class="about-stat-card">
+          <span class="asc-num">2+</span>
+          <span class="asc-label">Years Building Software</span>
+        </div>
+        <div class="about-stat-card" style="grid-column: 1 / -1;">
+          <span class="asc-num" style="font-size:1.1rem; line-height:1.4;">Java / JS / SQL</span>
+          <span class="asc-label" style="margin-top:0.3rem;">Core Technologies Used</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section id="skills">
+    <div class="section-header reveal">
+      <p class="section-tag">Technologies I work with</p>
+      <h2 class="section-title">Skills</h2>
+    </div>
+    <!-- Tab Filters -->
+    <div class="skills-tabs reveal">
+      <button class="skill-tab active" data-tab="all" id="tab-all">All</button>
+      <button class="skill-tab" data-tab="frontend" id="tab-frontend">Frontend</button>
+      <button class="skill-tab" data-tab="backend" id="tab-backend">Backend</button>
+      <button class="skill-tab" data-tab="database" id="tab-database">Database</button>
+      <button class="skill-tab" data-tab="tools" id="tab-tools">Tools & Deployment</button>
+      <button class="skill-tab" data-tab="testing" id="tab-testing">Testing & Performance</button>
+    </div>
+    <!-- Skills Icon Grid -->
+    <div class="skills-icon-grid reveal" id="skills-icon-grid">
+      <!-- Frontend -->
+      <div class="skill-icon-card" data-category="frontend">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+          alt="JavaScript" class="skill-icon-img" />
+        <span>JavaScript</span>
+      </div>
+      <div class="skill-icon-card" data-category="frontend">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+          alt="TypeScript" class="skill-icon-img" />
+        <span>TypeScript</span>
+      </div>
+      <div class="skill-icon-card" data-category="frontend">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React"
+          class="skill-icon-img" />
+        <span>React</span>
+      </div>
+      <div class="skill-icon-card" data-category="frontend">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+          alt="Tailwind CSS" class="skill-icon-img" />
+        <span>Tailwind CSS</span>
+      </div>
+      <div class="skill-icon-card" data-category="frontend">
+        <svg viewBox="0 0 24 24" class="skill-icon-img" fill="#DD0031">
+          <path
+            d="M12 2.1L.1 6.3l1.8 12.7 10.1 5.6 10.1-5.6 1.8-12.7L12 2.1zM18.8 17.5h-2.1L15 12.3H9L7.3 17.5H5.2l6.8-13.6 6.8 13.6zM14.2 10.5L12 5.5l-2.2 5h4.4z" />
+        </svg>
+        <span>Angular</span>
+      </div>
+
+      <!-- Backend -->
+      <div class="skill-icon-card" data-category="backend">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java"
+          class="skill-icon-img" />
+        <span>Java</span>
+      </div>
+      <div class="skill-icon-card" data-category="backend">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg"
+          alt="Spring Boot" class="skill-icon-img" />
+        <span>Spring Boot</span>
+      </div>
+
+      <div class="skill-icon-card" data-category="backend">
+        <svg viewBox="0 0 24 24" class="skill-icon-img" fill="#4CAF50">
+          <path
+            d="M19.33 10.22l-1.33-4-4-1.33-4 1.33-1.33 4L10 14.22l-1.33 4 4 1.33 4-1.33 1.33-4 1.33-4zm-8.66 4.44l-1.33-1.33 1.33-4 1.33 1.33-1.33 4z" />
+        </svg>
+        <span>REST APIs</span>
+      </div>
+
+      <!-- Database -->
+      <div class="skill-icon-card" data-category="database">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL"
+          class="skill-icon-img" />
+        <span>MySQL</span>
+      </div>
+      <div class="skill-icon-card" data-category="database">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+          alt="PostgreSQL" class="skill-icon-img" />
+        <span>PostgreSQL</span>
+      </div>
+      <div class="skill-icon-card" data-category="database">
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg"
+          alt="SQL" class="skill-icon-img" />
+        <span>SQL</span>
+      </div>
+      <div class="skill-icon-card" data-category="database">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg" alt="Redis"
+          class="skill-icon-img" />
+        <span>Redis</span>
+      </div>
+
+      <!-- Tools & Deployment -->
+      <div class="skill-icon-card" data-category="tools">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Linux"
+          class="skill-icon-img" />
+        <span>Linux</span>
+      </div>
+      <div class="skill-icon-card" data-category="tools">
+        <svg viewBox="0 0 24 24" class="skill-icon-img" fill="#2088FF">
+          <path
+            d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.268 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.026 2.747-1.026.546 1.379.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z" />
+        </svg>
+        <span>GitHub Actions</span>
+      </div>
+      <div class="skill-icon-card" data-category="tools">
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+          alt="AWS" class="skill-icon-img" style="filter: brightness(0) invert(1);" />
+        <span>AWS</span>
+      </div>
+
+      <!-- Testing & Performance -->
+      <div class="skill-icon-card" data-category="testing">
+        <svg viewBox="0 0 24 24" class="skill-icon-img" fill="#7D64FF">
+          <path
+            d="M13 2.05v3.03c3.39.49 6 3.39 6 6.92 0 .9-.18 1.75-.48 2.54l2.6 1.53c.56-1.24.88-2.62.88-4.07 0-5.18-3.95-9.45-9-9.95zM12 19c-3.87 0-7-3.13-7-7 0-3.53 2.61-6.43 6-6.92V2.05c-5.06.5-9 4.76-9 9.95 0 5.52 4.47 10 9.99 10 3.31 0 6.24-1.61 8.06-4.09l-2.6-1.53C16.17 17.98 14.21 19 12 19z" />
+        </svg>
+        <span>k6</span>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ===== EXPERIENCE SECTION ===== -->
+  <section id="experience">
+    <div class="section-header reveal">
+      <p class="section-tag">My Journey</p>
+      <h2 class="section-title">Work <span class="accent">Experience</span></h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item reveal" id="exp-item-1">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3>Netferra Technologies</h3>
+            <span class="timeline-badge">Current</span>
+          </div>
+          <p class="timeline-company">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+              <polyline points="9,22 9,12 15,12 15,22" />
+            </svg>
+            Full-Stack Developer
+          </p>
+          <p class="timeline-date">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+              <line x1="16" y1="2" x2="16" y2="6" />
+              <line x1="8" y1="2" x2="8" y2="6" />
+              <line x1="3" y1="10" x2="21" y2="10" />
+            </svg>
+            Aug 2024 – Present
+          </p>
+          <ul class="timeline-points">
+            <li>Building a multi-tenant B2C SaaS eCommerce platform using Java, Spring Boot, PostgreSQL, Redis, and
+              Angular.</li>
+            <li>Designed 5 Spring Boot microservices for Authentication, Product, Order, Tenant, and Gateway services.
+            </li>
+            <li>Implemented subdomain-based multi-tenancy, JWT authentication, RBAC, Redis caching, and secure service
+              communication.</li>
+            <li>Deployed the platform to production VPS infrastructure using Docker, Nginx, SSL, and Linux.</li>
+          </ul>
+          <div class="timeline-tags">
+            <span>Java</span><span>Spring
+              Boot</span><span>PostgreSQL</span><span>Redis</span><span>Docker</span><span>Nginx</span>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item reveal" id="exp-item-2">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3>B.Tech — Electronics & Communication</h3>
+            <span class="timeline-badge edu-badge">Education</span>
+          </div>
+          <p class="timeline-company">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+              <path d="M6 12v5c3 3 9 3 12 0v-5" />
+            </svg>
+            Kamala Institute of Technologies and Science, JNTU affiliated
+          </p>
+          <p class="timeline-date">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+              <line x1="16" y1="2" x2="16" y2="6" />
+              <line x1="8" y1="2" x2="8" y2="6" />
+              <line x1="3" y1="10" x2="21" y2="10" />
+            </svg>
+            2020 – 2024
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section id="projects">
+    <div class="section-header reveal">
+      <p class="section-tag">Browse My Work</p>
+      <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+    </div>
+    <div class="projects-grid">
+
+      <!-- Project 1: shopnetferra.com -->
+            <div class="project-card reveal" id="project-card-1">
+        <div class="project-img-wrapper">
+          <img src="./assests/mpw.png" alt="shopnetferra.com screenshot" class="project-img" loading="lazy" />
+        </div>
+        <div class="project-info">
+          <h3 class="project-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 8px;">
+              <path d="M4 22h14a2 2 0 0 0 2-2V7.5L14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+            </svg>
+            shopnetferra.com
+          </h3>
+          <p class="project-desc">A multi-tenant B2C SaaS eCommerce platform supporting multiple independent storefronts
+            with secure checkout and role-based access.</p>
+          <div class="project-links">
+            
+            <a href="https://www.shopnetferra.com" target="_blank">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              Live Demo
+            </a>
+            <button class="case-study-btn" data-modal="case-study-1">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+              Case Study
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: Slay -->
+            <div class="project-card reveal" id="project-card-2">
+        <div class="project-img-wrapper">
+          <img src="./assests/slay.png" alt="Slay - Client eCommerce screenshot" class="project-img" loading="lazy" />
+        </div>
+        <div class="project-info">
+          <h3 class="project-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 8px;">
+              <path d="M4 22h14a2 2 0 0 0 2-2V7.5L14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+            </svg>
+            Slay - Client eCommerce
+          </h3>
+          <p class="project-desc">A modern eCommerce application with a sleek UI, shopping cart, user accounts, and a
+            seamless secure checkout experience.</p>
+          <div class="project-links">
+            
+            <a href="https://slay-a-fashion-tee.vercel.app" target="_blank">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              Live Demo
+            </a>
+            <button class="case-study-btn" data-modal="case-study-2">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+              Case Study
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: Hirezy Job Portal -->
+            <div class="project-card reveal" id="project-card-3">
+        <div class="project-img-wrapper">
+          <img src="./assests/jobportal.png" alt="Hirezy Job Portal screenshot" class="project-img" loading="lazy" />
+        </div>
+        <div class="project-info">
+          <h3 class="project-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 8px;">
+              <path d="M4 22h14a2 2 0 0 0 2-2V7.5L14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+            </svg>
+            Hirezy Job Portal
+          </h3>
+          <p class="project-desc">A full-featured job portal connecting job seekers with employers. Features job
+            listings, applications, and user dashboards.</p>
+          <div class="project-links">
+            <a href="https://github.com/saitejagovikar/Online-Job-Portal" target="_blank">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              GitHub
+            </a>
+            <a href="https://hirezyjobportal.netlify.app/" target="_blank">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              Live Demo
+            </a>
+            <button class="case-study-btn" data-modal="case-study-3">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+              Case Study
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4: DineRush -->
+            <div class="project-card reveal" id="project-card-4">
+        <div class="project-img-wrapper">
+          <img src="./assests/dinerush.png" alt="DineRush screenshot" class="project-img" loading="lazy" />
+        </div>
+        <div class="project-info">
+          <h3 class="project-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 8px;">
+              <path d="M4 22h14a2 2 0 0 0 2-2V7.5L14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+            </svg>
+            DineRush
+          </h3>
+          <p class="project-desc">A modern restaurant website focused on responsive design, clean presentation, and an
+            engaging customer-facing experience.</p>
+          <div class="project-links">
+            <a href="https://github.com/saitejagovikar/Restaurant-website.git" target="_blank">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              GitHub
+            </a>
+            <a href="https://restaurant-website-gilt-tau.vercel.app/" target="_blank">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              Live Demo
+            </a>
+            <button class="case-study-btn" data-modal="case-study-4">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+              Case Study
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5: Companies Directory -->
+            <div class="project-card reveal" id="project-card-5">
+        <div class="project-img-wrapper">
+          <img src="./assests/company.png" alt="Companies Directory screenshot" class="project-img" loading="lazy" />
+        </div>
+        <div class="project-info">
+          <h3 class="project-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 8px;">
+              <path d="M4 22h14a2 2 0 0 0 2-2V7.5L14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+            </svg>
+            Companies Directory
+          </h3>
+          <p class="project-desc">A responsive company-directory web application built as part of a frontend development
+            assessment, focused on clean UI, reusable components, and data presentation.</p>
+          <div class="project-links">
+            <a href="https://github.com/saitejagovikar/companies-directory.git" target="_blank">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              GitHub
+            </a>
+            <a href="https://companies-directory-ochre.vercel.app/" target="_blank">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              Live Demo
+            </a>
+            <button class="case-study-btn" data-modal="case-study-5">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+              Case Study
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6: City Central Lodge -->
+            <div class="project-card reveal" id="project-card-6">
+        <div class="project-img-wrapper">
+          <img src="./assests/lodge.png" alt="City Central Lodge screenshot" class="project-img" loading="lazy" />
+        </div>
+        <div class="project-info">
+          <h3 class="project-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 8px;">
+              <path d="M4 22h14a2 2 0 0 0 2-2V7.5L14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+            </svg>
+            City Central Lodge
+          </h3>
+          <p class="project-desc">A responsive website developed for Viceroy Lodge to establish its online presence and
+            provide customers with a direct enquiry channel.</p>
+          <div class="project-links">
+            <a href="https://github.com/saitejagovikar/city-central.git" target="_blank">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              GitHub
+            </a>
+            <a href="https://city-central-six.vercel.app/" target="_blank">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              Live Demo
+            </a>
+            <button class="case-study-btn" data-modal="case-study-6">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+              Case Study
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CASE STUDY MODALS ===== -->
+  <div class="modal-overlay" id="modal-overlay">
+
+    <!-- Modal 1: shopnetferra.com -->
+    <div class="case-study-modal" id="case-study-1">
+      <button class="modal-close" aria-label="Close modal">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="modal-content">
+        <h2>shopnetferra.com (MPW)</h2>
+        <div class="modal-meta">
+          <span>Role: Full-Stack Developer</span>
+        </div>
+        <img src="./assests/mpw.png" alt="shopnetferra.com Interface" class="modal-img" />
+
+        <div class="modal-section">
+          <h3>Overview & Problem</h3>
+          <p>MPW — Multi-Tenant SaaS E-commerce Platform required a highly scalable and isolated architecture for
+            managing independent storefronts under one unified backend.</p>
+        </div>
+
+        <div class="modal-section">
+          <h3>What I Built</h3>
+          <p>Built a multi-tenant B2C SaaS eCommerce platform supporting multiple independent storefronts.</p>
+          <ul>
+            <li>Designed 5 Spring Boot microservices for Authentication, Product, Order, Tenant, and API Gateway.</li>
+            <li>Implemented subdomain-based multi-tenancy, JWT authentication, RBAC, Redis caching, and secure service
+              communication.</li>
+            <li>Deployed the platform to a production VPS using Docker, Docker Compose, PostgreSQL, Redis, Nginx, SSL,
+              and domain routing.</li>
+          </ul>
+        </div>
+
+        <div class="modal-section">
+          <h3>Tech Stack</h3>
+          <div class="modal-tags">
+            <span>Java</span><span>Spring Boot</span><span>Spring
+              Cloud</span><span>Angular</span><span>PostgreSQL</span><span>Redis</span><span>Docker</span><span>Nginx</span>
+          </div>
+        </div>
+        <div class="modal-section">
+          <a href="https://www.shopnetferra.com" target="_blank" class="btn btn-outline">Live Demo (Production)</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2: Slay -->
+    <div class="case-study-modal" id="case-study-2">
+      <button class="modal-close" aria-label="Close modal">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="modal-content">
+        <h2>Slay - Client eCommerce</h2>
+        <div class="modal-meta">
+          <span>Role: Full-Stack Developer</span>
+        </div>
+        <img src="./assests/slay.png" alt="Slay eCommerce Interface" class="modal-img" />
+
+        <div class="modal-section">
+          <h3>Overview & Problem</h3>
+          <p>The client needed a highly customized, fast, and modern fashion eCommerce store that appeals to younger
+            demographics. Slay delivers a smooth and dynamic shopping journey.</p>
+        </div>
+
+        <div class="modal-section">
+          <h3>What I Built</h3>
+          <p>A complete full-stack web application for fashion retail, integrating a highly interactive frontend with a
+            secure and fast backend.</p>
+          <ul>
+            <li>Modern, sleek user interface optimized for high conversions.</li>
+            <li>Interactive shopping cart and secure user account management.</li>
+            <li>Integrated MongoDB for seamless and scalable product catalog handling.</li>
+          </ul>
+        </div>
+
+        <div class="modal-section">
+          <h3>Tech Stack</h3>
+          <div class="modal-tags">
+            <span>React</span><span>VueJS</span><span>NodeJS</span><span>MongoDB</span>
+          </div>
+        </div>
+        <div class="modal-section">
+          <a href="https://slay-a-fashion-tee.vercel.app" target="_blank" class="btn btn-outline">Live Demo</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3: Hirezy Job Portal -->
+    <div class="case-study-modal" id="case-study-3">
+      <button class="modal-close" aria-label="Close modal">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="modal-content">
+        <h2>Hirezy Job Portal</h2>
+        <div class="modal-meta">
+          <span>Role: Full-Stack Developer</span>
+          <span>Timeline: 3 Months</span>
+        </div>
+        <img src="./assests/jobportal.png" alt="Hirezy Interface" class="modal-img" />
+
+        <div class="modal-section">
+          <h3>Overview & Problem</h3>
+          <p>Job seekers needed a streamlined platform to find opportunities without excessive friction, and employers
+            needed a reliable way to filter through massive applicant pools. I built Hirezy to bridge this gap with an
+            intuitive interface and a robust backend system.</p>
+        </div>
+
+        <div class="modal-section">
+          <h3>What I Built</h3>
+          <p>A complete full-stack web application featuring user authentication, role-based dashboards (Admin,
+            Employer, Job Seeker), real-time application tracking, and secure data storage.</p>
+          <ul>
+            <li>Secure user registration and authentication flow.</li>
+            <li>Employer dashboard for posting jobs and reviewing applicants.</li>
+            <li>Job seeker profile building and one-click application process.</li>
+          </ul>
+        </div>
+
+        <div class="modal-section">
+          <h3>Tech Stack</h3>
+          <div class="modal-tags">
+            <span>Java</span><span>Spring Boot</span><span>MySQL</span><span>HTML/CSS</span><span>JavaScript</span>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h3>Challenges & Outcome</h3>
+          <p><strong>Challenge:</strong> Handling relational data efficiently so complex queries (e.g., matching job
+            seekers to specific job roles) remained fast.<br />
+            <strong>Outcome:</strong> Implemented optimized MySQL queries via Spring Data JPA, resulting in sub-100ms
+            response times for core API endpoints. The project was successfully deployed and acts as a primary
+            demonstration of my full-stack capabilities.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 4: DineRush -->
+    <div class="case-study-modal" id="case-study-4">
+      <button class="modal-close" aria-label="Close modal">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="modal-content">
+        <h2>DineRush</h2>
+        <div class="modal-meta">
+          <span>Role: Frontend Developer</span>
+        </div>
+        <img src="./assests/dinerush.png" alt="DineRush Interface" class="modal-img" />
+
+        <div class="modal-section">
+          <h3>Overview & Problem</h3>
+          <p>A modern restaurant website focused on responsive design, clean presentation, and an engaging
+            customer-facing experience.</p>
+        </div>
+
+        <div class="modal-section">
+          <h3>What I Built</h3>
+          <p>Built a fast and visually appealing frontend specific for restaurant branding:</p>
+          <ul>
+            <li>Created engaging customer-facing interfaces for menus and online presence.</li>
+            <li>Optimized for performance and responsive layout on all devices.</li>
+          </ul>
+        </div>
+
+        <div class="modal-section">
+          <h3>Tech Stack</h3>
+          <div class="modal-tags">
+            <span>React</span><span>JavaScript</span><span>HTML</span><span>CSS</span>
+          </div>
+        </div>
+        <div class="modal-section">
+          <a href="https://restaurant-website-gilt-tau.vercel.app/" target="_blank" class="btn btn-outline">Live
+            Demo</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 5: Companies Directory -->
+    <div class="case-study-modal" id="case-study-5">
+      <button class="modal-close" aria-label="Close modal">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="modal-content">
+        <h2>Companies Directory</h2>
+        <div class="modal-meta">
+          <span>Role: Frontend Developer</span>
+        </div>
+        <img src="./assests/company.png" alt="Companies Directory Interface" class="modal-img" />
+
+        <div class="modal-section">
+          <h3>Overview & Problem</h3>
+          <p>This project was built as a frontend development assessment to demonstrate the ability to create clean,
+            responsive UI with reusable components. The primary focus was on presenting data clearly and handling
+            responsive user interactions smoothly.</p>
+        </div>
+
+        <div class="modal-section">
+          <h3>What I Built</h3>
+          <p>A responsive company-directory web application featuring:</p>
+          <ul>
+            <li>Clean and structured UI for viewing company data.</li>
+            <li>Reusable UI components for seamless data presentation.</li>
+            <li>Fully responsive design for optimal viewing on desktop and mobile.</li>
+          </ul>
+        </div>
+
+        <div class="modal-section">
+          <h3>Tech Stack</h3>
+          <div class="modal-tags">
+            <span>React.js</span><span>JavaScript/TypeScript</span><span>HTML</span><span>CSS</span>
+          </div>
+        </div>
+        <div class="modal-section">
+          <a href="https://companies-directory-ochre.vercel.app/" target="_blank" class="btn btn-outline">Live Demo</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 6: City Central Lodge -->
+    <div class="case-study-modal" id="case-study-6">
+      <button class="modal-close" aria-label="Close modal">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="modal-content">
+        <h2>City Central Lodge</h2>
+        <div class="modal-meta">
+          <span>Role: Frontend Developer (Freelance)</span>
+        </div>
+        <img src="./assests/lodge.png" alt="City Central Lodge Interface" class="modal-img" />
+
+        <div class="modal-section">
+          <h3>Overview & Problem</h3>
+          <p>A responsive website developed for Viceroy Lodge to establish its online presence and provide customers
+            with a direct enquiry channel.</p>
+        </div>
+
+        <div class="modal-section">
+          <h3>What I Built</h3>
+          <p>Developed a responsive, mobile-friendly interface for the hospitality business:</p>
+          <ul>
+            <li>Presented property information and services through a clean customer-facing website.</li>
+            <li>Implemented a WhatsApp-based enquiry/booking flow for direct customer communication.</li>
+            <li>Deployed the production website seamlessly on Vercel.</li>
+          </ul>
+        </div>
+
+        <div class="modal-section">
+          <h3>Tech Stack</h3>
+          <div class="modal-tags">
+            <span>React</span><span>JavaScript</span><span>HTML</span><span>CSS</span><span>Vercel</span>
+          </div>
+        </div>
+        <div class="modal-section">
+          <a href="https://city-central-six.vercel.app/" target="_blank" class="btn btn-outline">Live Demo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section id="services">
+    <div class="section-header reveal">
+      <p class="section-tag">What I Can Build</p>
+      <h2 class="section-title">Specialized <span class="accent">Services</span></h2>
+    </div>
+    <div class="services-grid reveal">
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+            <line x1="8" y1="21" x2="16" y2="21" />
+            <line x1="12" y1="17" x2="12" y2="21" />
+          </svg>
+        </div>
+        <h3>Business Websites</h3>
+        <p>Modern, responsive websites for businesses, organizations, and startups designed to convert visitors into
+          clients.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+            <line x1="3" y1="9" x2="21" y2="9" />
+            <line x1="9" y1="21" x2="9" y2="9" />
+          </svg>
+        </div>
+        <h3>Web Applications</h3>
+        <p>Complex dashboards, portals, SaaS products, and custom business applications built with scalable
+          architectures.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <ellipse cx="12" cy="5" rx="9" ry="3" />
+            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+          </svg>
+        </div>
+        <h3>Backend & APIs</h3>
+        <p>Secure REST APIs, robust authentication systems, database design, and seamless third-party software
+          integrations.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+          </svg>
+        </div>
+        <h3>Performance & Deployment</h3>
+        <p>Performance optimization, containerization (Docker), Linux server deployment, and reliable production setups.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact">
+    <div class="section-header reveal">
+      <p class="section-tag">Tell me what you're building and I'll get back to you with the next steps.</p>
+      <h2 class="section-title">📬 Have a project in mind?</h2>
+    </div>
+    <div class="contact-wrapper">
+      <div class="contact-info reveal">
+        <div class="contact-items">
+          <a href="mailto:saiteja51743@gmail.com" class="contact-item" id="contact-email">
+            <div class="contact-item-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </div>
+            <div>
+              <span class="contact-label">Email</span>
+              <span class="contact-value">saiteja51743@gmail.com</span>
+            </div>
+          </a>
+          <div class="contact-item" id="contact-location">
+            <div class="contact-item-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </div>
+            <div>
+              <span class="contact-label">Location</span>
+              <span class="contact-value">India (Available Worldwide)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Submits via JavaScript to construct a custom mailto link -->
+      <form class="contact-form reveal" id="contact-form" novalidate>
+        <div class="form-group">
+          <label for="contact-name">Name</label>
+          <input type="text" id="contact-name" name="name" placeholder="Your name" required />
+          <span class="error-text" id="error-name">Name is required</span>
+        </div>
+        <div class="form-group">
+          <label for="contact-email-input">Email</label>
+          <input type="email" id="contact-email-input" name="email" placeholder="your@email.com" required />
+          <span class="error-text" id="error-email">Please enter a valid email address</span>
+        </div>
+        <div class="form-group">
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" name="message" rows="5" placeholder="Tell me about your project..."
+            required></textarea>
+          <span class="error-text" id="error-message">Message cannot be empty</span>
+        </div>
+        <button type="submit" class="btn btn-outline form-submit" id="form-submit-btn">
+          Start a Project
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="22" y1="2" x2="11" y2="13" />
+            <polygon points="22,2 15,22 11,13 2,9 22,2" />
+          </svg>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <span class="logo-bracket">&lt;</span>SaiTeja<span class="logo-bracket">/&gt;</span>
+        <p>Full-Stack Web Developer</p>
+      </div>
+      <div class="footer-socials">
+        <a href="https://github.com/saitejagovikar" target="_blank" aria-label="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/sai-teja-govikar-bb1032256/" target="_blank" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+            <rect x="2" y="9" width="4" height="12" />
+            <circle cx="4" cy="4" r="2" />
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Sai Teja Govikar. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
