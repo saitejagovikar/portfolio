@@ -307,3 +307,75 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+/* ===== SPLIT LOADER WITH TERMINAL EFFECT ===== */
+window.addEventListener('load', () => {
+  const loader = document.getElementById('loader');
+  const terminal = document.getElementById('terminal-loader');
+  const loaderName = document.getElementById('loader-name');
+  
+  if (loader && terminal && loaderName) {
+    const lines = [
+      "> Initializing Saiteja.dev",
+      "> Loading projects...",
+      "> Connecting to production...",
+      "> Ready."
+    ];
+    
+    let currentLine = 0;
+    
+    function typeLine() {
+      if (currentLine < lines.length) {
+        const lineEl = document.createElement('div');
+        lineEl.className = 'terminal-line';
+        
+        let charIndex = 0;
+        const text = lines[currentLine];
+        const textNode = document.createTextNode('');
+        lineEl.appendChild(textNode);
+        
+        const cursor = document.createElement('span');
+        cursor.className = 'terminal-cursor';
+        lineEl.appendChild(cursor);
+        
+        terminal.appendChild(lineEl);
+        
+        const typeInterval = setInterval(() => {
+          if (charIndex < text.length) {
+            textNode.nodeValue += text.charAt(charIndex);
+            charIndex++;
+          } else {
+            clearInterval(typeInterval);
+            cursor.remove();
+            currentLine++;
+            setTimeout(typeLine, 300);
+          }
+        }, 40);
+      } else {
+        // Finished typing all lines
+        setTimeout(() => {
+          terminal.style.display = 'none';
+          
+          // Show the split line
+          loader.classList.add('show-line');
+          
+          loaderName.style.display = 'block';
+          // trigger reflow
+          void loaderName.offsetWidth;
+          loaderName.style.opacity = '1';
+          
+          // Trigger split after showing name
+          setTimeout(() => {
+            loader.classList.add('loaded');
+            setTimeout(() => {
+              loader.classList.add('hidden');
+            }, 1000);
+          }, 1200);
+        }, 500);
+      }
+    }
+    
+    // Start sequence
+    setTimeout(typeLine, 300);
+  }
+});

@@ -1889,3 +1889,110 @@ section:first-of-type {
   color: var(--text-muted);
   font-size: 0.85rem;
 }
+
+/* ===== SPLIT LOADER ===== */
+.loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.loader-left, .loader-right {
+  position: absolute;
+  top: 0;
+  width: 50vw;
+  height: 100vh;
+  background: var(--bg-primary, #050505);
+  transition: transform 1s cubic-bezier(0.77, 0, 0.175, 1);
+  z-index: 1;
+}
+
+.loader-left {
+  left: 0;
+}
+
+.loader-right {
+  right: 0;
+}
+
+.loader-wrapper.show-line .loader-left {
+  border-right: 1px solid rgba(255,255,255,0.15);
+}
+.loader-wrapper.show-line .loader-right {
+  border-left: 1px solid rgba(255,255,255,0.15);
+}
+
+.loader-content {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s ease;
+  width: 100%;
+}
+
+.terminal-loader {
+  font-family: monospace;
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  text-align: left;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.terminal-line {
+  margin-bottom: 0.8rem;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.terminal-cursor {
+  display: inline-block;
+  width: 8px;
+  height: 1.1rem;
+  background-color: var(--accent-violet);
+  animation: blink 1s step-end infinite;
+  vertical-align: text-bottom;
+  margin-left: 5px;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.loader-name {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: 3px;
+  background: var(--gradient-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.loader-wrapper.loaded .loader-left {
+  transform: translateX(-100%);
+}
+
+.loader-wrapper.loaded .loader-right {
+  transform: translateX(100%);
+}
+
+.loader-wrapper.loaded .loader-content {
+  opacity: 0;
+}
+
+.loader-wrapper.hidden {
+  display: none;
+}
