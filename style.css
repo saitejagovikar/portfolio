@@ -156,7 +156,9 @@ strong { color: var(--text-primary); }
 }
 
 #desktop-nav.scrolled {
-  background: rgba(15, 15, 15, 0.95);
+  background: rgba(15, 15, 15, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   box-shadow: 0 4px 30px rgba(255, 255, 255, 0.15);
 }
 
@@ -320,8 +322,9 @@ strong { color: var(--text-primary); }
   justify-content: space-between;
   padding: 0 6vw;
   z-index: 1000;
-  background: rgba(15, 15, 15, 0.95);
+  background: rgba(15, 15, 15, 0.6);
   backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border);
 }
 
